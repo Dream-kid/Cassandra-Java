@@ -1,0 +1,17 @@
+Run As admin power shell
+C:\program files\apache-cassandra-3.11.6\bin> .\cassandra.bat
+
+cmd
+//cql shell
+C:\Program Files\apache-cassandra-3.11.6\bin>cqlsh
+create keyspace sourav with replication={'class':'SimpleStrategy', 'replication_factor':1}
+;
+use sourav
+;
+CREATE TABLE User(
+           id int PRIMARY KEY,
+           name text,
+           address text,
+           age int
+          );
+select * from User;		  
